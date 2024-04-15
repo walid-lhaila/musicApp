@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { Routes, Route, Link } from 'react-router-dom';
+import React from 'react';
+import MusicDetail from './components/music/MusicDetail';
 function App() {
   return (
-    <div className="App">
-     <h1 className="text-blue-600 text-3xl font-bold text-center flex justify-center items-center h-screen">HELLO </h1>
-    </div>
+    <Routes>
+      <Route path="/MusicDetail" element={<MusicDetail/>}/>
+    </Routes>
   );
 }
 
