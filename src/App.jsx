@@ -1,8 +1,8 @@
 import React from "react";
-import {Routes, Link, Route} from "react-router-dom";
 import AllMusic from "./components/Music/AllMusic";
 import './App.css';
-
+import { Routes, Route, Link } from 'react-router-dom';
+import MusicDetail from './components/music/MusicDetail';
 function App() {
   return (
     <div className="App">
@@ -12,7 +12,9 @@ function App() {
 
         <Routes>
             <Route path="/AllMusic" element={<AllMusic/>}/>
+            <Route path="/MusicDetail" element={<MusicDetail/>}/>
         </Routes>
+
     </div>
   );
 }
