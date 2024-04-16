@@ -24,7 +24,7 @@ function App() {
 
   const fetchArtistData = (artistName) => {
     fetch(
-      `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_artist=&apikey=${apiKey}`
+      `https://cors.eu.org/http://api.musixmatch.com/ws/1.1/track.search?q_artist=&apikey=${apiKey}`
    
     )
       .then((res) => res.json())
@@ -38,7 +38,7 @@ function App() {
 
   const fetchLyricData = (lyric) => {
 fetch(
-  `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_lyrics=kill&apikey=${apiKey}`
+  `https://cors.eu.org/http://api.musixmatch.com/ws/1.1/track.search?q_lyrics=kill&apikey=${apiKey}`
 
 )
   .then((res) => res.json())
@@ -52,7 +52,7 @@ fetch(
 
   const fetchTitleData = (title) => {
     fetch(
-      `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=kill&apikey=${apiKey}`
+      `https://cors.eu.org/http://api.musixmatch.com/ws/1.1/track.search?q_track=kill&apikey=${apiKey}`
     
     )
       .then((res) => res.json())
@@ -65,7 +65,7 @@ fetch(
       };
 
       const fetchTrackData = () => {
-        fetch(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.get?commontrack_id=555&apikey=${apiKey}`
+        fetch(`https://cors.eu.org/http://api.musixmatch.com/ws/1.1/track.get?commontrack_id=555&apikey=${apiKey}`
       )
           .then((res) => res.json())
           .then((data) => {
